@@ -8,7 +8,9 @@ if ( !$wgCommandLineMode ) {
 		'meta.wikitide.com' :
 		'meta.wikiforge.net';
 
-	$logoUrl = 'https://static.wikiforge.net/metawiki/8/88/WikiForge_Logo.svg';
+	$logoUrl = $wi->wikifarm === 'wikitide' ?
+		'https://static.wikiforge.net/commonswikitide/2/22/WikiTide_icon.svg' :
+		'https://static.wikiforge.net/metawiki/8/88/WikiForge_Logo.svg';
 	$logoAltText = $wi->wikifarm === 'wikitide' ?
 		'WikiTide Logo' :
 		'WikiForge Logo';
