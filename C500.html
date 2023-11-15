@@ -31,10 +31,26 @@
 				padding-left: 15px;
 				padding-right: 15px;
 			}
-			/* Bolden <h1 /> */
+			/* CloudFlare-specific hacks */
 			h1 {
 				font-weight: bold;
 			}
+			ul:before {
+				content:"When reporting this, please include this information: \A";
+				white-space: pre-wrap;
+			}
+
+			li {
+				list-style-type: none;
+				line-height: 1.5em;
+				font-size: 0.8em;
+				display: inline;
+			}
+
+			li:after {
+				content: ","
+			}
+
 			/* Bottom links */
 			.bottom-links {
 				display: flex;
@@ -76,8 +92,7 @@
 				<img src="https://static.wikiforge.net/metawiki/8/88/WikiForge_Logo.svg" width="130" height="130" alt="WikiForge" />
 			</a>
 			<p>::CLOUDFLARE_ERROR_500S_BOX::</p>
-			<p>If this keeps happening, <a href="https://static-help.wikiforge.net/docs/errors/500">let us know</a>.</p>
-			<a href="javascript:document.location.reload(true);" class="btn btn-outline-primary" role="button">Try this action again</a>
+			<a href="javascript:document.location.reload(true);" class="btn btn-outline-primary" role="button">Try again</a>
 		</div>
 	</div>
 </html>
