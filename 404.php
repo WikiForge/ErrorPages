@@ -24,7 +24,7 @@ echo <<<EOF
 			<div class="jumbotron" style="padding: 70px 0; text-align: center;">
 				<p>
 					<a href="https://wikiforge.net">
-						<img src="https://static.wikiforge.net/metawiki/8/88/WikiForge_Logo.svg" width="130" height="130" alt="WikiForge" />
+						<img src="https://static.wikiforge.net/hubwiki/8/88/WikiForge_Logo.svg" width="130" height="130" alt="WikiForge" />
 					</a>
 				</p>
 				<h1><b>Page not found</b></h1>

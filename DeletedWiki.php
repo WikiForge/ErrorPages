@@ -25,7 +25,7 @@ if ( !$wgCommandLineMode ) {
 			<div class="container" style="padding: 70px 0; text-align: center;">
 				<!-- Jumbotron -->
 				<div class="jumbotron">
-					<img src="https://static.wikiforge.net/metawiki/8/88/WikiForge_Logo.svg" width="130" height="130" alt="WikiForge" />
+					<img src="https://static.wikiforge.net/hubwiki/8/88/WikiForge_Logo.svg" width="130" height="130" alt="WikiForge" />
 					<h1><b>Wiki deleted</b></h1>
 					<p class="lead">This wiki was deleted either by request, for non-payment, or due to Terms of Use violations.</p>
 					<p>

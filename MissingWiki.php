@@ -25,7 +25,7 @@ if ( !$wgCommandLineMode ) {
 			<div class="container" style="padding: 70px 0; text-align: center;">
 				<!-- Jumbotron -->
 				<div class="jumbotron">
-					<img src="https://static.wikiforge.net/metawiki/8/88/WikiForge_Logo.svg" width="130" height="130" alt="WikiForge" />
+					<img src="https://static.wikiforge.net/hubwiki/8/88/WikiForge_Logo.svg" width="130" height="130" alt="WikiForge" />
 					<h1><b>Wiki not found</b></h1>
 					<p class="lead">Check your spelling and try again.</p>
 					<p>
