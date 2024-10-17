@@ -1,10 +1,9 @@
-
 <?php
 
-if ( !$wgCommandLineMode ) {
-	http_response_code( 410 );
+use MediaWiki\MediaWikiServices;
 
-	$requestWikiUrl = 'https://meta.wikiforge.net/wiki/Special:RequestPremiumWiki?wpsubdomain=' . substr( $wgDBname, 0, -4 );
+if ( MW_ENTRY_POINT !== 'cli ) {
+	http_response_code( 410 );
 
 	$output = <<<EOF
 		<!DOCTYPE html>
@@ -29,7 +28,7 @@ if ( !$wgCommandLineMode ) {
 					<h1><b>Wiki deleted</b></h1>
 					<p class="lead">This wiki was deleted either by request, for non-payment, or due to Terms of Use violations.</p>
 					<p>
-						<a href="{$requestWikiUrl}" class="btn btn-lg btn-outline-primary" role="button">Start this wiki</a>
+						<a href="https://wikiforge.xyz" class="btn btn-lg btn-outline-primary" role="button">Go home</a>
 					</p>
 				</div>
 			</div>
