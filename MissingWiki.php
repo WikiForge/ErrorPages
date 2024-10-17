@@ -1,10 +1,7 @@
-
 <?php
 
-if ( !$wgCommandLineMode ) {
+if ( MW_ENTRY_POINT !== 'cli ) {
 	http_response_code( 404 );
-
-	$requestWikiUrl = 'https://meta.wikiforge.net/wiki/Special:RequestPremiumWiki?wpsubdomain=' . substr( $wgDBname, 0, -4 );
 
 	$output = <<<EOF
 		<!DOCTYPE html>
@@ -29,7 +26,7 @@ if ( !$wgCommandLineMode ) {
 					<h1><b>Wiki not found</b></h1>
 					<p class="lead">Check your spelling and try again.</p>
 					<p>
-						<a href="{$requestWikiUrl}" class="btn btn-lg btn-outline-primary" role="button">Start this wiki</a>
+						<a href="https://wikiforge.xyz/plans.html" class="btn btn-lg btn-outline-primary" role="button">Start this wiki</a>
 					</p>
 				</div>
 			</div>
