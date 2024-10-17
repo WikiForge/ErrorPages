@@ -1,6 +1,8 @@
 <?php
 
-if ( MW_ENTRY_POINT !== 'cli ) {
+use MediaWiki\MediaWikiServices;
+
+if ( MW_ENTRY_POINT !== 'cli' ) {
 	http_response_code( 404 );
 
 	$output = <<<EOF
@@ -39,6 +41,7 @@ if ( MW_ENTRY_POINT !== 'cli ) {
 	EOF;
 	header( 'Content-length: ' . strlen( $output ) );
 	echo $output;
+
 	die( 1 );
 } else {
 	// $wgDBname will always be set to a string, even if the --wiki parameter was not passed to a script.
